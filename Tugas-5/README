@@ -1,0 +1,6 @@
+- To run the website you must install golang
+- Then install sql driver look https://github.com/go-sql-driver/mysql
+- Run the Sql
+- go to your project path and build the main.go file with:
+  go build main.go
+- Run the main.exe file
