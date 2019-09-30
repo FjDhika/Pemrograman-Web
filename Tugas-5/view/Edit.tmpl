@@ -1,0 +1,45 @@
+{{ define "Edit" }}
+	{{ template "Header" }}
+		{{ template "Navbar" }}
+
+		<form method="POST" action="Update?Npm={{ .Npm }}">
+			<div class="form-group">
+				<label for="Npm">NPM</label>
+				<input class="form-control" id="Npm" name="Npm" value="{{ .Npm }}" disabled></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Nama">NAMA</label>
+				<input class="form-control" id="Nama" name="Nama" value="{{ .Nama }}"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Alamat">Alamat</label>
+				<input class="form-control" id="Alamat" name="Alamat" value="{{ .Alamat }}"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Email">EMAIL</label>
+				<input class="form-control" id="Email" name="Email" value="{{ .Email }}"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Telp">TELEPON</label>
+				<input class="form-control" id="Telp" name="Telp" value="{{ .Phone }}"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Org">Organization</label>
+				<input class="form-control" id="Org" name="Org" value="{{ .Org }}"></input>
+				<textarea class="form-control" id="Org-desc" name="Org_desc" rows="3"> {{ .Org_desc }} </textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="General">Deskripsi Singkat Tentang Anda</label>
+				<textarea class="form-control" id="General" name="General" rows="3"> {{ .General }} </textarea>
+			</div>
+
+			<button class="btn btn-primary">Insert</button>
+		</form>
+	{{ template "Footer" }}
+{{ end }}

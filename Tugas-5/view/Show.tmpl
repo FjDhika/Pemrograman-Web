@@ -1,0 +1,112 @@
+{{ define "Show" }}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/styles/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="/styles/css/960-12-col.css">
+</head>
+<body>
+	<div class="wrapper container_12">
+
+		<div class="container_12">
+
+			<div class="grid_4 omega">
+
+				<div class="profile-pic-container">
+					<img src="/assets/download.jpg">
+				</div>
+				<div class="horizontal_dotted_line"><span class="dot"></span></div>
+
+				<h3 class="profile-text title">EMAIL</h3>
+				<h4 class="profile-text">{{ .Email }}</h4>
+				<div class="horizontal_dotted_line"><span class="dot"></span></div>
+
+				<h3 class="profile-text title">PHONE</h3>
+				<h4 class="profile-text">{{ .Phone }}</h4>
+				<div class="horizontal_dotted_line"><span class="dot"></span></div>
+
+				<h3 class="profile-text title">ADDRESS</h3>
+				<h4 class="profile-text">{{ .Alamat }}</h4>
+				<div class="horizontal_dotted_line"><span class="dot"></span></div>	
+
+			</div>
+
+			<div class="grid_8 alpha omega" style="background: white;">
+
+				<div class="name-profile">
+					<strong style="font-size: 40px; color: white;">{{ .Nama }}</strong>
+				</div>
+
+				<div>
+					<div class="ribbon-3 ribbon" style="width: 300px">
+						<strong class="ribbon-text">General Profile</strong>
+					</div>
+
+					<p>{{ .General }}</p>
+				</div>
+				
+				<div>
+					
+					<div class="ribbon-2 ribbon">
+						<strong class="ribbon-text">Organisation</strong>
+					</div>
+					<h3>{{ .Org }}</h3>
+					<!-- <h5 class="subtitle">Divisi Artistik</h5> -->
+					<p>{{ .Org_desc }}</p>
+
+				</div>
+
+				<div class="container_8">
+
+					<div class="grid_4">
+						<div class="ribbon-1 ribbon-no">
+								<strong class="ribbon-text">EDUCATION</strong>
+						</div>
+						
+						<div style="margin-left: 10px">
+
+							<h3>UPN "V" Jatim</h3>
+							<h5 class="subtitle">2017 - Sekarang</h5>
+							<p></p>
+
+							<h3>SMAN 1 Tuban</h3>
+							<h5 class="subtitle">2014 - 2017</h5>
+							<p></p>
+
+							<h3>SMPN 1 Tuban</h3>
+							<h5 class="subtitle">2011 - 2014</h5>
+							<p></p>
+
+							<h3>SDN Kradenan</h3>
+							<h5 class="subtitle">2009 - 2011</h5>
+
+						</div>
+
+					</div>
+
+					<div class="grid_4">
+						<div class="ribbon-0 ribbon-no">
+							<strong class="ribbon-text">SKILL</strong>
+						</div>
+							
+						<div style="margin-left: 20px">
+							<h2>C</h2>
+							<div class="skills C">80%</div>
+							<h2>JAVA</h2>
+							<div class="skills java">75%</div>
+							<h2>PYTHON</h2>
+							<div class="skills python">70%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>
+
+{{ end }}
