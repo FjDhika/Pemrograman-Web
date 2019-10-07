@@ -1,0 +1,45 @@
+{{ define "New" }}
+	{{ template "Header" }}
+		{{ template "Navbar" }}
+		<form method="POST" action="Insert">
+			<div class="form-group">
+				<label for="Npm">NPM</label>
+				<input class="form-control" id="Npm" name="Npm" placeholder="NPM"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Nama">NAMA</label>
+				<input class="form-control" id="Nama" name="Nama" placeholder="NPM"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Alamat">Alamat</label>
+				<input class="form-control" id="Alamat" name="Alamat" placeholder="Alamat"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Email">EMAIL</label>
+				<input class="form-control" id="Email" name="Email" placeholder="example@example.com"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Telp">TELEPON</label>
+				<input class="form-control" id="Telp" name="Telp" placeholder="081234567890"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="Org">Organization</label>
+				<input class="form-control" id="Org" name="Org" placeholder="Nama Organisasi"></input>
+				<textarea class="form-control" id="Org-desc" name="Org-desc" rows="3"
+				placeholder="Deskripsi Singkat Tentang Organisasi Anda"></textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="General">Deskripsi Singkat Tentang Anda</label>
+				<textarea class="form-control" id="General" name="General" rows="3"></textarea>
+			</div>
+
+			<button class="btn btn-primary">Insert</button>
+		</form>
+	{{ template "Footer"}}
+{{ end }}

@@ -1,0 +1,39 @@
+{{ define "Index" }}
+	{{ template "Header" }}
+			{{ template "Navbar" }}
+			<!-- Content -->
+			<h1 class="text-center">Data From DB</h1>
+			<div class="row justify-content-md-center">
+				<div class="col-md-auto">
+					<table class="table text-center">
+						<thead class="thead-dark">
+							<tr>
+								<th scope="col">NPM</th>
+								<th scope="col">NAMA</th>
+								<th scope="col">EMAIL</th>
+								<th scope="col">TELP</th>
+								<th scope="col">ORGANISATION</th>
+								<th scope="col">VIEW</th>
+								<th scope="col">EDIT</th>
+								<th scope="col">DELETE</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{ range . }}
+							<tr>
+								<th scope="col"> {{ .Npm }} </th>
+								<td>{{ .Nama }}</td>
+								<td>{{ .Email }}</td>
+								<td>{{ .Phone }}</td>
+								<td>{{ .Org }}</td>
+								<td><a href="/Show?Npm={{ .Npm }}" class="btn btn-outline-primary">View</a></td>
+								<td><a href="/Edit?Npm={{ .Npm }}" class="btn btn-outline-warning">Edit</a></td>
+								<td><a href="/Delete?Npm={{ .Npm }}" class="btn btn-outline-danger">Delete</a></td>
+							</tr>
+							{{ end }}
+						</tbody>
+					</table>
+				</div>
+			</div>
+	{{ template "Footer" }}
+{{ end }}

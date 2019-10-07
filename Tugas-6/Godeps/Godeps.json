@@ -1,0 +1,12 @@
+{
+	"ImportPath": "Tugas-5",
+	"GoVersion": "go1.13",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.4.0-35-g6c79a37",
+			"Rev": "6c79a37b2e06d0297e8a76a70b747f72bdfa8338"
+		}
+	]
+}
